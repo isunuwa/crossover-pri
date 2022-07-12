@@ -1,6 +1,16 @@
 import React from 'react'
 import CompLogo from './../../public/assets/images/logo.png';
+
 const Header = () => {
+  const navLinks = [
+    {id: 1, title: 'Home', url: '/'},
+    {id: 2, title: 'About us', url: '/about-us'},
+    {id: 3, title: 'Service', url: '/service'},
+    {id: 4, title: 'Projects', url: '/projects'},
+    {id: 5, title: '+977 98XXXXXXXX', url: '/phone-number'},
+    {id: 6, title: 'Contact Us', url: '/contact-us'},
+  ];
+  
   return (
     <header className='ap-header-wrapper'>
       <div className='container'>
@@ -9,12 +19,9 @@ const Header = () => {
             <img src={CompLogo} alt='logo ' />
           </div>
           <ul className='ap-links'>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/about-us'>About us</a></li>
-            <li><a href='/service'>Service</a></li>
-            <li><a href='/projects'>Projects</a></li>
-            <li><a href='/phone-no'>phone no</a></li>
-            <li className='ap-btn-primary'><a href='/contact-us'>Contact no</a></li>
+            {navLinks.map( (navLink, index) => (
+              <li key={index}><a href={navLink.url}>{navLink.title}</a></li>
+            ))}
           </ul>
         </div>
       </div>

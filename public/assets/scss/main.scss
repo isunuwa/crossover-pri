@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   font-family: 'Poppins', sans-serif;
 }
@@ -14,8 +13,27 @@ body{
 }
 .ap-header-wrapper{
   box-shadow: 0 3px 5px -1px rgb(0 0 0 / 10%), 0 2px 1px -1px rgb(0 0 0 / 5%);
+  position: fixed;
+  background-color: $white;
+  width: 100%;
+  z-index: 2;
+}
+.ap-btn-primary{
+  padding: 8px 12px;
+  color: #ffffff;
+  background-color: $primary-color;
+  border-radius: 6px;
+}
+.ap-link{
+  &:hover{
+    text-decoration: none;
+  }
+}
+.ap-h1{
+  font-size: 28px;
 }
 
+// header styles
 .ap-header{
   justify-content: space-between;
   height: 80px;
@@ -71,3 +89,60 @@ body{
   }
 }
 
+// footer style
+.ap-footer{
+  height: 60px;
+  background-color: $primary-color;
+
+  .footer-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    p{
+      margin: 0;
+    }
+  }
+}
+
+// contact styles
+.ap-contact{
+  min-height: 200px;
+  background-color: rgba($light-grey, 0.3);
+}
+
+// main body
+.ap-main{
+  height: 100vh;
+  min-height: 620px;
+  background-color: $white;
+  .ap-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .ap-h1{
+      font-size: 80px;
+      color: $primary-color;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .ap-p{
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: $secondary-dark;
+    }
+
+    .ap-btn-primary{
+      padding: 10px 32px;
+      font-size: 18px;
+      display: inline-block;
+    }
+  }
+}
