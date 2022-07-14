@@ -74,7 +74,8 @@
 // contact styles
 .ap-contact{
   min-height: 200px;
-  background-color: rgba($light-grey, 0.3);
+  background-color: $white;
+  padding: 4.5rem 0;
 }
 
 // main body
@@ -169,6 +170,65 @@
           width: 20%;
         }
       }
+    }
+  }
+}
+
+// form wrapper
+.form-main-wrapper{
+  .ap-group-wrapper{
+    margin-bottom: 1.4rem;
+  }
+  .ap-form-group{
+    label{
+      display: inline-flex;
+    }
+    input{
+      width: 100%;
+    }
+  }
+  // icon
+  .ap-icon-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    img{
+      max-width: 25px;
+      margin: auto 0;
+      height: 100%;
+    }
+  }
+  // contact
+  .contact-company-detail{
+    .ap-info-label{
+      color: $secondary-dark;
+    }
+    .ap-info-detail{
+      margin-bottom: 0;
+      cursor: pointer;
+      
+      a{
+        color: $primary-color;
+        transition: $transition-all-4s;
+        
+        &:hover{
+          color: $primary-dark-color;
+          text-decoration: none;
+        }
+      }
+    }
+    .ap-form-group{
+      display: flex;
+      margin-bottom: 1.5rem;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .ap-info-icon{
+      margin-right: 8px;
     }
   }
 }

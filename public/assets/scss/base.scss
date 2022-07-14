@@ -37,6 +37,39 @@ body{
 .ap-h1{
   font-size: 28px;
 }
+
+input, textarea{
+  border-radius: 0;
+  border: 1px solid $light-grey;
+  box-shadow: none;
+  outline: none;
+  transition: $transition-all-4s;
+  
+  padding-left: 4px;
+  padding-right: 4px;
+  &:active, &:focus{
+    border: 1px solid $primary-color;
+  }
+  // &:hover{}
+}
+input{
+  height: 50px;
+}
+textarea{
+  width: 100%;
+}
+.ap-danger{
+  color: $danger;
+}
+button{
+  border-radius: 0;
+  text-transform: none;
+  background: $primary-color;
+  color: $white;
+  padding: 0.5rem 2rem;
+  border-color: transparent;
+}
+
 smart-image{
   display: block;
   width: 100%;
