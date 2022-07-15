@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Contact from './includes/Contact';
+import Contact from './layouts/Contact';
 import bannerImage from './../../public/assets/images/banner.png';
 import svgComputer from './../../public/assets/svg/computer-icon.svg';
 const Main = () => {
