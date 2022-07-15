@@ -1,15 +1,26 @@
-import React from 'react'
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Contact from './Components/Contact';
+import React, { Component } from 'react'
+import Header from './Components/includes/Header';
+import Footer from './Components/includes/Footer';
 import Main from './Components/Main';
+import AboutUs from './Components/AboutUs';
 
 const App = () => {
+  let Component;
+  // route
+  switch (window.location.pathname) {
+    case '/':
+      Component = Main;
+      break;
+    case '/about-us':
+      Component = AboutUs;
+      break;
+  }
+
   return (
+
     <div className='ap-wide'>
       <Header />
-      <Main />
-      <Contact />
+      <Component />
       <Footer />
     </div>
   )

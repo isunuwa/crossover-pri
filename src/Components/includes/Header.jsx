@@ -1,5 +1,5 @@
 import React from 'react'
-import CompLogo from './../../public/assets/images/logo.png';
+import CompLogo from './../../../public/assets/images/logo.png';
 
 const Header = () => {
   const navLinks = [

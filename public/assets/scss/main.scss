@@ -42,6 +42,22 @@
           }
         }
       }
+      &:last-child{
+        a{
+          font-style: normal;
+          text-transform: none;
+          letter-spacing: 0em;
+          border-radius: 0.3em;
+          padding: 0.5em 1.5em;
+          background: $primary-color;
+          border-color: transparent;
+          box-shadow: 0 0em 0em rgb(0 0 0 / 20%);
+          color: $white;
+          &:hover{
+            background-color: $primary-dark-color;
+          }
+        }
+      }
     }
   }
   // media for navbar

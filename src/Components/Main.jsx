@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Contact from './includes/Contact';
 import bannerImage from './../../public/assets/images/banner.png';
 import svgComputer from './../../public/assets/svg/computer-icon.svg';
 const Main = () => {
+  useEffect( () => {
+    document.title = "Home"
+  });
   return (
     <div className="ap-main">
       <div className="main-overview">
@@ -36,6 +40,8 @@ const Main = () => {
           </div>
         </div>
       </div>
+      {/* contact */}
+      <Contact />
     </div>
   );
 }
