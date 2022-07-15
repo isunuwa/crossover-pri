@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
+// import {Main, AboutUs, Service, Project, Contact} from './components';
+
 import Main from './components/Main';
 import AboutUs from './components/AboutUs';
 import Service from './components/Service';

@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-8">
-            <form onSubmit={""} method="post">
+            <form method="post">
               <div className="form-main-wrapper">
                 <div className="ap-group-wrapper contact-user-detail row">
                   <div className="ap-form-group col-md-4">
@@ -42,7 +42,7 @@ const Contact = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcset="" />
+                        <img src={svgInfo} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcset="" />
+                        <img src={svgInfo} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcset="" />
+                        <img src={svgInfo} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcset="" />
+                        <img src={svgInfo} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>

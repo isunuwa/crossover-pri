@@ -106,3 +106,49 @@ smart-image{
 .ap-empty-3{
   height: 3rem;
 }
+
+// breadcrumb
+.ap-bread-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+}
+.ap-breadcrumb{
+  background-color: $primary-color;
+  color: $white;
+
+  .bread-page-location{
+    display: flex;
+    align-items: center;
+  }
+  .ap-h1{
+    font-weight: 600;
+  }
+  
+  .bread-list{
+    margin: 0;
+  }
+  .bread-section{
+    font-size: 14px;
+    list-style: none;
+    display: inline-block;
+
+    &:not(:first-child):before{
+      content: '/\000a0';
+      display: inline-block;
+      font-size: 11px;
+      margin-left: 6px;
+      color: $white;
+    }
+
+    a{
+      color: $white;
+      transition: $transition-all-4s;
+
+      &:hover{
+        color: $dark-white;
+        text-decoration: none;
+      }
+    }
+  }
+}
