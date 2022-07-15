@@ -27,6 +27,9 @@
           color: $primary-color;
           transition: $transition-all-4s;
         }
+        &.active{
+          color: $primary-color;
+        }
       }
       &.ap-btn-primary{
         a{
@@ -53,8 +56,13 @@
           border-color: transparent;
           box-shadow: 0 0em 0em rgb(0 0 0 / 20%);
           color: $white;
+          border: 1px solid $primary-color;
           &:hover{
             background-color: $primary-dark-color;
+          }
+          &.active{
+            color: $primary-color;
+            background-color: transparent;
           }
         }
       }
@@ -245,6 +253,72 @@
     }
     .ap-info-icon{
       margin-right: 8px;
+    }
+  }
+}
+
+// about page
+.ap-about{
+  .about-record-wrapper{
+    margin-bottom: 4rem;
+  }
+  .ap-about-info, .ap-about-record{
+    padding: 3.5rem 0;
+  }
+  .ap-about-info{
+    background-color: $dark-white;
+    text-align: center;
+    color: $secondary-dark;
+    .ap-h1{
+      margin-bottom: 1.5rem;
+    }
+  }
+  .ap-about-record{
+    .ap-record-item{
+      box-shadow: 0 0 20px 2px rgba(233,234,235,1);
+      border-radius: 8px;
+      padding: 2rem 0;
+      margin: 0 16px;
+      text-align: center;
+      transition: $transition-all-4s;
+      
+      &:hover{
+        box-shadow: 0 0 20px 2px rgb(219, 219, 219);
+      }
+    }
+    .ap-head{
+      margin-bottom: 2.5rem;
+    }
+    .ap-h2{
+      text-align: center;
+    }
+  }
+  .ap-record-group{
+    .record-detail{
+      margin-top: 6px;
+    }
+    .record-count{
+      font-size: 24px;
+      font-weight: bold;
+      span{
+        font-weight: lighter;
+        margin-left: -5px;
+      }
+    }
+    .record-title{
+      font-size: 18px;
+    }
+  }
+  // bottom record
+  .about-record-info-wrapper{
+    .record-info-group{
+      .ap-h3{
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+      }
+      .ap-p{
+        margin: 0 0 1.5rem;
+      }
     }
   }
 }

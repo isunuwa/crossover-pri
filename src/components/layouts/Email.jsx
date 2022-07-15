@@ -1,7 +1,7 @@
 import React from 'react'
 import svgInfo from './../../../public/assets/svg/info-icon.svg';
 
-const Contact = () => {
+const Email = () => {
   return (
     <div className='ap-contact'>
       <div className="container">
@@ -100,4 +100,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Email

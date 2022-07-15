@@ -1,5 +1,6 @@
 import React from 'react'
 import CompLogo from './../../../public/assets/images/logo.png';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 const Header = () => {
   const navLinks = [
@@ -10,7 +11,15 @@ const Header = () => {
     {id: 5, title: '+977 98XXXXXXXX', url: 'tel:98XXXXXXX', target: '_blank'},
     {id: 6, title: 'Contact Us', url: '/contact-us', target: ''},
   ];
-  
+
+  function CustomLink( {navLink}) {
+    const resolvedPath = useResolvedPath(navLink.url);
+    const isActive = useMatch( {path: resolvedPath.pathname, end: true});
+    return (
+      <li><Link to={navLink.url} target={navLink.target} className={isActive ? "active" : ""}>{navLink.title}</Link></li>
+    )
+  }
+    
   return (
     <header className='ap-header-wrapper'>
       <div className='container'>
@@ -19,8 +28,8 @@ const Header = () => {
             <img src={CompLogo} alt='logo ' />
           </div>
           <ul className='ap-links'>
-            {navLinks.map( (navLink, index) => (
-              <li key={index}><a href={navLink.url} target={navLink.target}>{navLink.title}</a></li>
+            {navLinks.map( (navLink) => (
+              <CustomLink navLink={navLink} key={navLink.id}/>
             ))}
           </ul>
         </div>

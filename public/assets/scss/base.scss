@@ -122,7 +122,8 @@ smart-image{
     align-items: center;
   }
   .ap-h1{
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: uppercase;
   }
   
   .bread-list{
@@ -132,6 +133,7 @@ smart-image{
     font-size: 14px;
     list-style: none;
     display: inline-block;
+    text-transform: capitalize;
 
     &:not(:first-child):before{
       content: '/\000a0';
@@ -149,6 +151,25 @@ smart-image{
         color: $dark-white;
         text-decoration: none;
       }
+    }
+  }
+}
+.ap-head{
+  margin-bottom: 1.5rem;
+}
+
+// base ul
+.ap-list{
+  list-style: none;
+  .ap-list-item{
+    &::before{
+      content: '';
+      height: 7px;
+      width: 7px;
+      display: inline-block;
+      background-color: $primary-color;
+      margin-right: 6px;
+      margin-bottom: 2px;
     }
   }
 }
