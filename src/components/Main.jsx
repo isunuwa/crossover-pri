@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Email from './layouts/Email';
-import bannerImage from './../../public/assets/images/banner.png';
-import svgComputer from './../../public/assets/svg/computer-icon.svg';
+
 const Main = () => {
   useEffect( () => {
     document.title = "Home"
@@ -9,7 +8,7 @@ const Main = () => {
   return (
     <div className="ap-main">
       <div className="main-overview">
-        <smart-image className='smart-image' alt="banner image" mode="cover" style={{backgroundImage: `url(${bannerImage})`}}></smart-image>
+        <smart-image className='smart-image' alt="banner image" mode="cover" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/assets/images/banner.png")`}}></smart-image>
         <div className='ap-content conteiner-fluid'>
           <div className='ap-content-wrapper'>
             <h1 className='ap-h1 '>Build Intelligent Apps</h1>
@@ -31,7 +30,7 @@ const Main = () => {
           <div className="container ap-content-info ap-box">
             <div className="d-flex mr-2 w-100">
               <div className="ap-info_item">
-                <img src={svgComputer} alt="informantion" />
+                <img src="/public/assets/svg/computer-icon.svg" alt="informantion" />
                 <p>
                   Lorem ipsum dolor sit.
                 </p>

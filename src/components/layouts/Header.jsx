@@ -1,5 +1,4 @@
 import React from 'react'
-import CompLogo from './../../../public/assets/images/logo.png';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 const Header = () => {
@@ -25,7 +24,7 @@ const Header = () => {
       <div className='container'>
         <div className='ap-header row'>
           <div className='ap-logo'>
-            <img src={CompLogo} alt='logo ' />
+            <img src={process.env.PUBLIC_URL+'/assets/images/logo.png'} alt='logo' />
           </div>
           <ul className='ap-links'>
             {navLinks.map( (navLink) => (

@@ -1,5 +1,4 @@
 import React from 'react'
-import svgInfo from './../../../public/assets/svg/info-icon.svg';
 
 const Email = () => {
   return (
@@ -42,7 +41,7 @@ const Email = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcSet="" />
+                        <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>
@@ -55,7 +54,7 @@ const Email = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcSet="" />
+                        <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>
@@ -69,7 +68,7 @@ const Email = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcSet="" />
+                        <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>
@@ -82,7 +81,7 @@ const Email = () => {
                   <div className="ap-info-icon">
                     <a href="" className="ap-icon-wrapper">
                       <div className="">
-                        <img src={svgInfo} alt="icon" srcSet="" />
+                        <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                       </div>
                     </a>
                   </div>

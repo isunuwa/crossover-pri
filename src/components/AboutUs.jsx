@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import svgInfo from './../../public/assets/svg/info-icon.svg';
 import Breadcrumb from './includes/Breadcrumb';
 
 const AboutUs = () => {
@@ -29,7 +28,7 @@ const AboutUs = () => {
                 <div className="col-md-3">
                   <div className="ap-record-item ap-box">
                     <div className="record-img">
-                      <img src={svgInfo} alt="icon" srcSet="" />
+                      <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                     </div>
                     <div className="record-detail">
                       <div className="record-count">
@@ -44,7 +43,7 @@ const AboutUs = () => {
                 <div className="col-md-3">
                   <div className="ap-record-item ap-box">
                     <div className="record-img">
-                      <img src={svgInfo} alt="icon" srcSet="" />
+                      <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                     </div>
                     <div className="record-detail">
                       <div className="record-count">
@@ -59,7 +58,7 @@ const AboutUs = () => {
                 <div className="col-md-3">
                   <div className="ap-record-item ap-box">
                     <div className="record-img">
-                      <img src={svgInfo} alt="icon" srcSet="" />
+                      <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                     </div>
                     <div className="record-detail">
                       <div className="record-count">
@@ -74,7 +73,7 @@ const AboutUs = () => {
                 <div className="col-md-3">
                   <div className="ap-record-item ap-box">
                     <div className="record-img">
-                      <img src={svgInfo} alt="icon" srcSet="" />
+                      <img src={process.env.PUBLIC_URL+"/assets/svg/info-icon.svg"} alt="icon" srcSet="" />
                     </div>
                     <div className="record-detail">
                       <div className="record-count">
