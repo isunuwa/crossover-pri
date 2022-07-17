@@ -10,27 +10,6 @@ import Contact from './components/Contact';
 import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
-  // let Component;
-  // // route
-  // switch (window.location.pathname) {
-  //   case '/contact-us':
-  //     Component = Contact;
-  //     break;
-  //   case '/about-us':
-  //     Component = AboutUs;
-  //     break;
-  //   case '/projects':
-  //     Component = Project;
-  //     break;
-  //   case '/service':
-  //     Component = Service;
-  //     break;
-  //   default:
-  //     Component = Main;
-  //     break;
-  // }
-
-
   return (
 
     <div className='ap-wide'>

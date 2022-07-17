@@ -27,7 +27,7 @@ const AboutUs = () => {
               <h2 className='ap-h2 dash-text ap-head'>Our Track Record</h2>
               <div className="row ap-record-group">
                 <div className="col-md-3">
-                  <div className="ap-record-item">
+                  <div className="ap-record-item ap-box">
                     <div className="record-img">
                       <img src={svgInfo} alt="icon" srcSet="" />
                     </div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="ap-record-item">
+                  <div className="ap-record-item ap-box">
                     <div className="record-img">
                       <img src={svgInfo} alt="icon" srcSet="" />
                     </div>
@@ -57,7 +57,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="ap-record-item">
+                  <div className="ap-record-item ap-box">
                     <div className="record-img">
                       <img src={svgInfo} alt="icon" srcSet="" />
                     </div>
@@ -72,7 +72,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="ap-record-item">
+                  <div className="ap-record-item ap-box">
                     <div className="record-img">
                       <img src={svgInfo} alt="icon" srcSet="" />
                     </div>

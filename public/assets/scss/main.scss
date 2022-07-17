@@ -173,13 +173,8 @@
 
     // 
     .ap-content-info{
-      box-shadow: 0 0 20px 2px rgb(233 234 235);
       border-radius: 8px;
       padding: 2rem 1rem;
-      transition: $transition-all-4s;
-      &:hover{
-        box-shadow: 0 0 20px 2px rgb(226, 226, 226);
-      }
       .d-flex{
         flex-direction: column;
       }
@@ -256,14 +251,14 @@
     }
   }
 }
+.ap-about-info, .ap-about-record, .ap-contact-info, .ap-project{
+  padding: 3.5rem 0;
+}
 
 // about page
 .ap-about{
   .about-record-wrapper{
     margin-bottom: 4rem;
-  }
-  .ap-about-info, .ap-about-record{
-    padding: 3.5rem 0;
   }
   .ap-about-info{
     background-color: $dark-white;
@@ -275,16 +270,10 @@
   }
   .ap-about-record{
     .ap-record-item{
-      box-shadow: 0 0 20px 2px rgba(233,234,235,1);
       border-radius: 8px;
       padding: 2rem 0;
       margin: 0 16px;
       text-align: center;
-      transition: $transition-all-4s;
-      
-      &:hover{
-        box-shadow: 0 0 20px 2px rgb(219, 219, 219);
-      }
     }
     .ap-head{
       margin-bottom: 2.5rem;
@@ -318,6 +307,80 @@
       }
       .ap-p{
         margin: 0 0 1.5rem;
+      }
+    }
+  }
+}
+
+// contact page
+.ap-contactus{
+  .ap-contact-info{
+    background-color: $dark-white;
+    text-align: center;
+
+    .ap-h1{
+      font-size: 38px;
+      margin-bottom: 1.5rem;
+    }
+    .dash-text{
+      &::after{
+        bottom: -10px;
+      }
+    }
+  }
+}
+
+// projects page
+.ap-project{
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .project-item{
+    height: 220px;
+    position: relative;
+    margin-bottom: 16px;
+    color: $black;
+    text-transform: capitalize;
+    overflow: hidden;
+    
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .project-title{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: justify;
+      padding: 16px;
+      overflow: hidden;
+      opacity: 0;
+      transition: $transition-all-4s;
+      transform: translateY(100%);
+    }
+    .title-wrapper{
+      padding: 10px 14px;
+      width: 100%;
+      text-align: center;
+      background-color: $primary-color;
+      color: $white;
+      margin-top: auto;
+    }
+    &:hover{
+      .project-title{
+        opacity: 1;
+        transform: translateY(0);
+        transition: $transition-all-4s;
       }
     }
   }

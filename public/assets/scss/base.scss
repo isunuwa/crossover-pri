@@ -173,3 +173,29 @@ smart-image{
     }
   }
 }
+
+.ap-box{
+  box-shadow: 0 0 20px 2px #e9eaeb;
+  transition: $transition-all-4s;
+
+  &:hover{
+    box-shadow: 0 0 20px 2px #dbdbdb;
+  }
+}
+.ap-overlay{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: transparent;
+  transition: $transition-all-4s;
+  &:hover{
+    background-color: rgba($black, 0.1);
+  }
+}
+.ap-col-group{
+  position: relative;
+}

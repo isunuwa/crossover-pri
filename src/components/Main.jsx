@@ -28,7 +28,7 @@ const Main = () => {
             </p>
           </div>
           <div className="ap-empty-3"></div>
-          <div className="container ap-content-info">
+          <div className="container ap-content-info ap-box">
             <div className="d-flex mr-2 w-100">
               <div className="ap-info_item">
                 <img src={svgComputer} alt="informantion" />
