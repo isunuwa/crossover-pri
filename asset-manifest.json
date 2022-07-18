@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crossover-pri/static/css/main.2cf7d43e.css",
+    "main.js": "/crossover-pri/static/js/main.66400f13.js",
+    "index.html": "/crossover-pri/index.html",
+    "main.2cf7d43e.css.map": "/crossover-pri/static/css/main.2cf7d43e.css.map",
+    "main.66400f13.js.map": "/crossover-pri/static/js/main.66400f13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cf7d43e.css",
+    "static/js/main.66400f13.js"
+  ]
+}
