@@ -175,6 +175,8 @@
     .ap-content-info{
       border-radius: 8px;
       padding: 2rem 1rem;
+      background-color: $white;
+      
       .d-flex{
         flex-direction: column;
       }
@@ -251,7 +253,7 @@
     }
   }
 }
-.ap-about-info, .ap-about-record, .ap-contact-info, .ap-project{
+.ap-about-info, .ap-about-record, .ap-contact-info, .ap-project, .ap-other-service{
   padding: 3.5rem 0;
 }
 
@@ -382,6 +384,35 @@
         transform: translateY(0);
         transition: $transition-all-4s;
       }
+    }
+  }
+}
+
+// services
+.ap-other-service{
+  .ap-h1{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 3rem;
+  }
+  .service-row{
+    background-color: $white;
+    padding: 3rem 0;
+    &:nth-child(even){
+      background-color: $dark-white;
+      .service-col{
+        order: 2;
+      }
+    }
+  }
+  .other-image{
+    overflow: hidden;
+    img{
+      background-size: cover;
+      max-height: 280px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }

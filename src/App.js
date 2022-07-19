@@ -7,7 +7,7 @@ import AboutUs from './components/AboutUs';
 import Service from './components/Service';
 import Project from './components/Project';
 import Contact from './components/Contact';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
  
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
     <div className='ap-wide'>
       <Header />
       <Routes>
+        <Route path="*" element={<Navigate to="/"/>} />
         <Route path="/" element={<Main />}/>
         <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/contact-us" element={<Contact />}/>

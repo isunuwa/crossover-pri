@@ -30,7 +30,7 @@ const Main = () => {
           <div className="container ap-content-info ap-box">
             <div className="d-flex mr-2 w-100">
               <div className="ap-info_item">
-                <img src="/public/assets/svg/computer-icon.svg" alt="informantion" />
+                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="informantion" />
                 <p>
                   Lorem ipsum dolor sit.
                 </p>
