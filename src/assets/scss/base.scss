@@ -101,6 +101,12 @@ smart-image{
     width: 100px;
     height: 4px;
   }
+  &.dash-left{
+    &::after{
+      left: 0;
+      transform: none;
+    }
+  }
 }
 
 .ap-empty-3{
