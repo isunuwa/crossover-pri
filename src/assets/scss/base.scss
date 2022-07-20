@@ -95,7 +95,7 @@ smart-image{
     content: '';
     background-color: $primary-color;
     position: absolute;
-    bottom: -6px;
+    bottom: -10px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100px;
@@ -204,4 +204,62 @@ smart-image{
 }
 .ap-col-group{
   position: relative;
+}
+
+// message
+.ap-about-message{
+  background-color: $primary-color;
+  color: $white;
+  .msg-wrapper{
+    background-color: $white;
+    color: $primary-color;
+    padding: 4rem;
+    position: relative;
+    margin-top: 40px;
+    &::before{
+      left: 20%;
+    }
+    &::before, &::after{
+      content: '';
+      height: 40px;
+      width: 4px;
+      background-color: $white;
+      position: absolute;
+      top: -40px;
+      border-radius: 20px 20px 0 0 ;
+    }
+    &::after{
+      right: 20%;
+    }
+  }
+  .ap-span{
+    text-align: center;
+    font-weight: 300;
+    display: block;
+    font-size: 13px;
+    font-style: italic;
+  }
+  .ap-p{
+    color: $secondary-dark;
+  }
+}
+
+// footer style
+.ap-footer{
+  height: 60px;
+  background-color: $primary-color;
+
+  .footer-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    text-align: center;
+    p{
+      margin: 0;
+    }
+    
+    padding: 0 14px;
+  }
 }

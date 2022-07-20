@@ -78,23 +78,6 @@
   }
 }
 
-// footer style
-.ap-footer{
-  height: 60px;
-  background-color: $primary-color;
-
-  .footer-wrapper{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-    p{
-      margin: 0;
-    }
-  }
-}
-
 // contact styles
 .ap-contact{
   min-height: 200px;
@@ -253,7 +236,7 @@
     }
   }
 }
-.ap-about-info, .ap-about-record, .ap-contact-info, .ap-project, .ap-other-service{
+.ap-about-info, .ap-about-record, .ap-contact-info, .ap-project, .ap-other-service, .ap-about-why, .ap-about-message{
   padding: 3.5rem 0;
 }
 
@@ -312,6 +295,18 @@
       }
     }
   }
+  // why
+  .ap-about-why{
+    background-color: $dark-white;
+    .why-intro{
+      .ap-h1{
+        margin-bottom: 2rem;
+      }
+      .ap-p{
+        text-align: justify;
+      }
+    }
+  }
 }
 
 // contact page
@@ -323,11 +318,6 @@
     .ap-h1{
       font-size: 38px;
       margin-bottom: 1.5rem;
-    }
-    .dash-text{
-      &::after{
-        bottom: -10px;
-      }
     }
   }
 }
@@ -457,6 +447,7 @@
       .ap-h3{
         font-size: 20px;
         font-weight: 500;
+        text-transform: uppercase;
       }
       .ap-p{
         font-size: 14px;

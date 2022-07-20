@@ -7,6 +7,21 @@ const AboutUs = () => {
   });
   const pageId = 1;
 
+  function Message() {
+    return(
+      <div className="ap-about-message">
+        <div className="container">
+          <div className="msg-wrapper">
+            <p className="ap-p text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque rem nesciunt natus deserunt molestiae cumque eligendi itaque? Rem, voluptatum!
+            </p>
+              <span className='ap-span'>(Message from CEO)</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
   return (
     <div className='ap-top'>
       <Breadcrumb page={pageId}/>
@@ -121,6 +136,22 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+        {/* why */}
+        <div className="ap-about-why">
+          <div className="container">
+            <div className="why-intro">
+              <h1 className='ap-h1 text-center dash-text'>Why Us</h1>
+              <p className="ap-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem laborum non nisi dicta tempore molestias saepe ipsum quibusdam ipsam.
+              </p>
+              <p className="ap-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatem nemo quas? Corrupti rerum necessitatibus rem vitae, consequuntur aut commodi dolores provident tempore, sunt ratione similique aliquid mollitia illum eum!
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* message */}
+        <Message />
       </div>
     </div>
   )
