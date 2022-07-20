@@ -63,6 +63,8 @@ textarea{
 }
 .ap-top{
   padding-top: 80px;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
 }
 button{
   border-radius: 0;
