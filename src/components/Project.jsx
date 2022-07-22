@@ -16,7 +16,7 @@ const Projects = () => {
           <div className="ap-box project-item">
             <div className="ap-overlay"></div>
             <div className="project-image">
-              <img src={project.imageUrl} alt="icon" srcSet="" />
+              <img src={process.env.PUBLIC_URL + project.imageUrl} alt="icon" srcSet="" />
             </div>
             <div className="project-title">
               <div className="title-wrapper">
