@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Breadcrumb from './includes/Breadcrumb';
+import Breadcrumb from './../components/includes/Breadcrumb';
 
 const AboutUs = () => {
   useEffect( () => {

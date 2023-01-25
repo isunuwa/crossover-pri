@@ -29,7 +29,7 @@ const Email = () => {
                   </div>
                 </div>
                 <div className="ap-group-wrapper">
-                  <button type='submit'>Submit</button>
+                  <button type='submit' className='ap-btn'>Submit</button>
                 </div>
               </div>
             </form>

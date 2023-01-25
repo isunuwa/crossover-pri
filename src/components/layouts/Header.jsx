@@ -24,7 +24,9 @@ const Header = () => {
       <div className='container'>
         <div className='ap-header row'>
           <div className='ap-logo'>
-            <img src={process.env.PUBLIC_URL+'/assets/images/logo.png'} alt='logo' />
+            <a href="/">
+              <img src={process.env.PUBLIC_URL+'/assets/images/logo.png'} alt='logo' />
+            </a>
           </div>
           <ul className='ap-links'>
             {navLinks.map( (navLink) => (

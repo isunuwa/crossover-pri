@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Breadcrumb from './includes/Breadcrumb';
+import Breadcrumb from './../components/includes/Breadcrumb';
 
 const Service = () => {
   useEffect( () => {
@@ -33,7 +33,7 @@ const Service = () => {
               <div className="other-item">
                 <div className="other-item-wrapper ap-box">
                   <div className="other-banner">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/banner.png"} alt="service icon" />
+                    <img src={process.env.PUBLIC_URL+"/assets/images/banners/banner-3.jpg"} alt="service icon" />
                   </div>
                   <div className="other-desc">
                     <h3 className="ap-h3">Lorem ipsum dolor sit.</h3>
@@ -46,7 +46,7 @@ const Service = () => {
               <div className="other-item">
                 <div className="other-item-wrapper ap-box">
                   <div className="other-banner">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/banner.png"} alt="service icon" />
+                    <img src={process.env.PUBLIC_URL+"/assets/images/banners/banner-4.jpg"} alt="service icon" />
                   </div>
                   <div className="other-desc">
                     <h3 className="ap-h3">Lorem ipsum dolor sit.</h3>
@@ -62,7 +62,7 @@ const Service = () => {
               <div className="other-item">
                 <div className="other-item-wrapper ap-box">
                   <div className="other-banner">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/banner.png"} alt="service icon" />
+                    <img src={process.env.PUBLIC_URL+"/assets/images/banners/banner-6.jpg"} alt="service icon" />
                   </div>
                   <div className="other-desc">
                     <h3 className="ap-h3">Lorem ipsum dolor sit.</h3>
@@ -75,7 +75,7 @@ const Service = () => {
               <div className="other-item">
                 <div className="other-item-wrapper ap-box">
                   <div className="other-banner">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/banner.png"} alt="service icon" />
+                    <img src={process.env.PUBLIC_URL+"/assets/images/banners/banner-7.jpg"} alt="service icon" />
                   </div>
                   <div className="other-desc">
                     <h3 className="ap-h3">Lorem ipsum dolor sit.</h3>
@@ -103,7 +103,7 @@ const Service = () => {
               <div className="row">
                 <div className="col-md-5 service-col">
                   <div className="other-image">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/banner.png"} alt="service icon" />
+                    <img src={process.env.PUBLIC_URL+"/assets/images/banners/banner-1.jpg"} alt="service icon" />
                   </div>
                 </div>
                 <div className="col-md-7">
@@ -120,7 +120,7 @@ const Service = () => {
               <div className="row">
                 <div className="col-md-5 service-col">
                   <div className="other-image">
-                    <img src={process.env.PUBLIC_URL+"/assets/images/banner.png"} alt="service icon" />
+                    <img src={process.env.PUBLIC_URL+"/assets/images/banners/banner-2.jpg"} alt="service icon" />
                   </div>
                 </div>
                 <div className="col-md-7">

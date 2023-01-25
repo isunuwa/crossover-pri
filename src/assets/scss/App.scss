@@ -1,12 +1,16 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
 
 // mixins
-@import 'mixins';
+@import "mixins";
 
 // variables
-@import 'variables';
+@import "variables";
+
+// components
+@import "components/fonts";
+@import "components/button";
 
 // main theme
-@import 'base';
-@import 'main';
+@import "base";
+@import "main";

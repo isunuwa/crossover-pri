@@ -1,81 +1,56 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
-.ap-max{
+.ap-max {
   // max-width: 1920px;
   max-width: 1440px;
   margin: 0 auto;
 }
-.ap-header-wrapper{
+.ap-header-wrapper {
   box-shadow: 0 3px 5px -1px rgb(0 0 0 / 10%), 0 2px 1px -1px rgb(0 0 0 / 5%);
   position: fixed;
   background-color: $white;
   width: 100%;
   z-index: 2;
 }
-.ap-btn-primary{
-  padding: 8px 12px;
-  color: #ffffff;
-  background-color: $primary-color;
-  border-radius: 6px;
-  transition: $transition-all-4s;
-  &:hover{
-    color: $white;
-    background-color: $primary-dark-color;
-  }
-}
-.ap-link{
-  &:hover{
-    text-decoration: none;
-  }
-}
-.ap-h1{
-  font-size: 28px;
-}
 
-input, textarea{
+input,
+textarea {
   border-radius: 0;
   border: 1px solid $light-grey;
   box-shadow: none;
   outline: none;
   transition: $transition-all-4s;
-  
+
   padding-left: 4px;
   padding-right: 4px;
-  &:active, &:focus{
+  &:active,
+  &:focus {
     border: 1px solid $primary-color;
   }
   // &:hover{}
 }
-input{
+input {
   height: 50px;
 }
-textarea{
+textarea {
   width: 100%;
 }
-.ap-danger{
+.ap-danger {
   color: $danger;
 }
-.ap-top{
+.ap-top {
   padding-top: 80px;
   min-height: calc(100vh - 60px);
   overflow: hidden;
 }
-button{
-  border-radius: 0;
-  text-transform: none;
-  background: $primary-color;
-  color: $white;
-  padding: 0.5rem 2rem;
-  border-color: transparent;
-}
 
-smart-image{
+smart-image {
   display: block;
   width: 100%;
   height: 0;
@@ -83,18 +58,18 @@ smart-image{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  
-  &[mode=cover]{
+
+  &[mode="cover"] {
     height: 100%;
   }
 }
 
-.dash-text{
+.dash-text {
   position: relative;
   margin-bottom: 14px;
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     background-color: $primary-color;
     position: absolute;
     bottom: -10px;
@@ -103,75 +78,75 @@ smart-image{
     width: 100px;
     height: 4px;
   }
-  &.dash-left{
-    &::after{
+  &.dash-left {
+    &::after {
       left: 0;
       transform: none;
     }
   }
 }
 
-.ap-empty-3{
+.ap-empty-3 {
   height: 3rem;
 }
 
 // breadcrumb
-.ap-bread-wrapper{
+.ap-bread-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem 0;
 }
-.ap-breadcrumb{
+.ap-breadcrumb {
   background-color: $primary-color;
   color: $white;
 
-  .bread-page-location{
+  .bread-page-location {
     display: flex;
     align-items: center;
   }
-  .ap-h1{
+  .ap-h1 {
     font-weight: 500;
     text-transform: uppercase;
   }
-  
-  .bread-list{
+
+  .bread-list {
     margin: 0;
   }
-  .bread-section{
+  .bread-section {
     font-size: 14px;
     list-style: none;
     display: inline-block;
     text-transform: capitalize;
 
-    &:not(:first-child):before{
-      content: '/\000a0';
+    &:not(:first-child):before {
+      content: "/\000a0";
       display: inline-block;
       font-size: 11px;
       margin-left: 6px;
       color: $white;
     }
 
-    a{
+    a {
       color: $white;
       transition: $transition-all-4s;
 
-      &:hover{
+      &:hover {
         color: $dark-white;
         text-decoration: none;
       }
     }
   }
 }
-.ap-head{
+.ap-head {
   margin-bottom: 1.5rem;
 }
 
 // base ul
-.ap-list{
+.ap-list {
   list-style: none;
-  .ap-list-item{
-    &::before{
-      content: '';
+  .ap-list-item {
+    &::before {
+      content: "";
       height: 7px;
       width: 7px;
       display: inline-block;
@@ -182,16 +157,16 @@ smart-image{
   }
 }
 
-.ap-box{
+.ap-box {
   box-shadow: 0 0 20px 2px #e9eaeb;
-  transition: $transition-all-4s;
+  @include transition(all 0.3s ease);
 
-  &:hover{
+  &:hover {
     box-shadow: 0 0 20px 2px #dbdbdb;
   }
 }
-.ap-overlay{
-  content: '';
+.ap-overlay {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -200,68 +175,70 @@ smart-image{
   z-index: 1;
   background-color: transparent;
   transition: $transition-all-4s;
-  &:hover{
+  &:hover {
     background-color: rgba($black, 0.1);
   }
 }
-.ap-col-group{
+.ap-col-group {
   position: relative;
 }
 
 // message
-.ap-about-message{
+.ap-about-message {
   background-color: $primary-color;
   color: $white;
-  .msg-wrapper{
+  .msg-wrapper {
     background-color: $white;
     color: $primary-color;
     padding: 4rem;
     position: relative;
     margin-top: 40px;
-    &::before{
+    &::before {
       left: 20%;
     }
-    &::before, &::after{
-      content: '';
+    &::before,
+    &::after {
+      content: "";
       height: 40px;
       width: 4px;
       background-color: $white;
       position: absolute;
       top: -40px;
-      border-radius: 20px 20px 0 0 ;
+      border-radius: 20px 20px 0 0;
     }
-    &::after{
+    &::after {
       right: 20%;
     }
   }
-  .ap-span{
+  .ap-span {
     text-align: center;
     font-weight: 300;
     display: block;
     font-size: 13px;
     font-style: italic;
   }
-  .ap-p{
+  .ap-p {
     color: $secondary-dark;
   }
 }
 
 // footer style
-.ap-footer{
+.ap-footer {
   height: 60px;
   background-color: $primary-color;
+  font-size: 14px;
 
-  .footer-wrapper{
+  .footer-wrapper {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $white;
     text-align: center;
-    p{
+    p {
       margin: 0;
     }
-    
+
     padding: 0 14px;
   }
 }

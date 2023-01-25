@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Email from './layouts/Email';
+import Email from './../components/layouts/Email';
 
 const Main = () => {
   useEffect( () => {
@@ -13,7 +13,7 @@ const Main = () => {
           <div className='ap-content-wrapper'>
             <h1 className='ap-h1 '>Build Intelligent Apps</h1>
             <p className='ap-p ap-m4'>We help add value through technology, <br/> custom built for your needs.</p>
-            <a href='#' className='ap-btn-primary ap-link'>Contact Us Now</a>
+            <a href='#' className='ap-btn ap-btn-primary ap-link'>Contact Us Now</a>
           </div>
         </div>
       </div>
@@ -30,7 +30,31 @@ const Main = () => {
           <div className="container ap-content-info ap-box">
             <div className="d-flex mr-2 w-100">
               <div className="ap-info_item">
-                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="informantion" />
+                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="information" />
+                <p>
+                  Lorem ipsum dolor sit.
+                </p>
+              </div>
+              <div className="ap-info_item">
+                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="information" />
+                <p>
+                  Lorem ipsum dolor sit.
+                </p>
+              </div>
+              <div className="ap-info_item">
+                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="information" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <div className="ap-info_item">
+                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="information" />
+                <p>
+                  Lorem, ipsum dolor.
+                </p>
+              </div>
+              <div className="ap-info_item">
+                <img src={process.env.PUBLIC_URL+"/assets/svg/computer-icon.svg"} alt="information" />
                 <p>
                   Lorem ipsum dolor sit.
                 </p>
