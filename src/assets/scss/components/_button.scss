@@ -1,0 +1,22 @@
+.ap-btn {
+  border-radius: 0;
+  text-transform: none;
+  background: $primary-color;
+  color: $white;
+  padding: 0.5rem 2rem;
+  border-color: transparent;
+  @include transition(all 0.3s ease);
+
+  &:hover {
+    background: $primary-dark-color;
+  }
+
+  // .ap-btn-primary {
+  // }
+}
+
+.ap-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
