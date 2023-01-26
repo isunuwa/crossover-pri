@@ -11,21 +11,21 @@ const Email = () => {
                 <div className="ap-group-wrapper contact-user-detail row">
                   <div className="ap-form-group col-md-4">
                     <label htmlFor="fullName" className='ap-form-label'>Full Name <span className='ap-danger'>*</span></label>
-                    <input type="text" name="fullName" id="fullName" />
+                    <input type="text" className='ap-form-input' name="fullName" id="fullName" />
                   </div>
                   <div className="ap-form-group col-md-4">
                     <label htmlFor="emailAddress" className='ap-form-label'>Email Address <span className='ap-danger'>*</span></label>
-                    <input type="text" name="emailAddress" id="emailAddress" />
+                    <input type="text" className='ap-form-input' name="emailAddress" id="emailAddress" />
                   </div>
                   <div className="ap-form-group col-md-4">
                     <label htmlFor="phoneNumber" className='ap-form-label'>Phone Number <span className='ap-danger'>*</span></label>
-                    <input type="text" name="phoneNumber" id="phoneNumber" />
+                    <input type="text" name="phoneNumber" className='ap-form-input' id="phoneNumber" />
                   </div>
                 </div>
                 <div className="ap-group-wrapper">
                   <div className="ap-form-group">
                     <label htmlFor="projectBrief" className='ap-form-label'>Project Brief <span className='ap-danger'>*</span></label>
-                    <textarea name="projectBrief" id="projectBrief" rows="7"></textarea>
+                    <textarea name="projectBrief" className='ap-form-input' id="projectBrief" rows="7"></textarea>
                   </div>
                 </div>
                 <div className="ap-group-wrapper">
