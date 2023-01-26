@@ -3,7 +3,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
 const Header = () => {
   const navLinks = [
-    {id: 1, title: 'Home', url: '/', target: ''},
+    {id: 1, title: 'Home', url: '/crossover-pri', target: ''},
     {id: 2, title: 'About us', url: '/about-us', target: ''},
     {id: 3, title: 'Service', url: '/service', target: ''},
     {id: 4, title: 'Projects', url: '/projects', target: ''},
@@ -24,9 +24,10 @@ const Header = () => {
       <div className='container'>
         <div className='ap-header row'>
           <div className='ap-logo'>
-            <a href="/">
+            {process.env.REACT_APP_APP_NAME}
+            {/* <a href={process.env.PUBLIC_URL}>
               <img src={process.env.PUBLIC_URL+'/assets/images/logo.png'} alt='logo' />
-            </a>
+            </a> */}
           </div>
           <ul className='ap-links'>
             {navLinks.map( (navLink) => (
