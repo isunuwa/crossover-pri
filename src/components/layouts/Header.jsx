@@ -24,10 +24,9 @@ const Header = () => {
       <div className='container'>
         <div className='ap-header row'>
           <div className='ap-logo'>
-            {process.env.REACT_APP_APP_NAME}
-            {/* <a href={process.env.PUBLIC_URL}>
+            <a href={process.env.PUBLIC_URL}>
               <img src={process.env.PUBLIC_URL+'/assets/images/logo.png'} alt='logo' />
-            </a> */}
+            </a>
           </div>
           <ul className='ap-links'>
             {navLinks.map( (navLink) => (
