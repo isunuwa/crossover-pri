@@ -14,7 +14,7 @@ const App = () => {
     <div className="ap-wide">
       <Header />
       <Routes>
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
         <Route path="/" element={<Main />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<Contact />} />
