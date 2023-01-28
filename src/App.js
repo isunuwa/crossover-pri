@@ -16,10 +16,22 @@ const App = () => {
       <Routes>
         {/* <Route path="*" element={<Navigate to="/" />} /> */}
         <Route path={process.env.PUBLIC_URL} element={<Main />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<Contact />} />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/service" element={<Service />} />
+        <Route
+          path={process.env.PUBLIC_URL + "/about-us"}
+          element={<AboutUs />}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/contact-us"}
+          element={<Contact />}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/projects"}
+          element={<Project />}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/service"}
+          element={<Service />}
+        />
       </Routes>
       <Footer />
     </div>

@@ -3,7 +3,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const Header = () => {
   const navLinks = [
-    { id: 1, title: "Home", url: "/crossover-pri", target: "" },
+    { id: 1, title: "Home", url: "", target: "" },
     { id: 2, title: "About us", url: "/about-us", target: "" },
     { id: 3, title: "Service", url: "/service", target: "" },
     { id: 4, title: "Projects", url: "/projects", target: "" },
@@ -17,7 +17,7 @@ const Header = () => {
     return (
       <li>
         <Link
-          to={navLink.url}
+          to={process.env.PUBLIC_URL + navLink.url}
           target={navLink.target}
           className={isActive ? "active" : ""}
         >
