@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/crossover-pri/static/css/main.cab59f94.css",
-    "main.js": "/crossover-pri/static/js/main.cc3c9246.js",
+    "main.css": "/crossover-pri/static/css/main.e9d0ccff.css",
+    "main.js": "/crossover-pri/static/js/main.a5f129d0.js",
     "index.html": "/crossover-pri/index.html",
-    "main.cab59f94.css.map": "/crossover-pri/static/css/main.cab59f94.css.map",
-    "main.cc3c9246.js.map": "/crossover-pri/static/js/main.cc3c9246.js.map"
+    "main.e9d0ccff.css.map": "/crossover-pri/static/css/main.e9d0ccff.css.map",
+    "main.a5f129d0.js.map": "/crossover-pri/static/js/main.a5f129d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.cab59f94.css",
-    "static/js/main.cc3c9246.js"
+    "static/css/main.e9d0ccff.css",
+    "static/js/main.a5f129d0.js"
   ]
 }
